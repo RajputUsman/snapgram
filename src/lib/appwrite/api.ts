@@ -188,7 +188,7 @@ export async function createPost(post: INewPost) {
     }
   }
   
-  export async function getInfinitePosts({ pageParam }: { pageParam: number }) {
+  export async function getInfinitePosts({ pageParam }: { pageParam: any }) {
     const queries: any[] = [Query.orderDesc("$updatedAt"), Query.limit(9)];
   
     if (pageParam) {

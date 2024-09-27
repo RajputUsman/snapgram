@@ -169,7 +169,8 @@ export const useGetPosts = () => {
       const lastId= lastPage?.documents[lastPage.documents.length - 1].$id
 
       return lastId
-    }
+    },
+    initialPageParam: undefined
   })
 }
 
